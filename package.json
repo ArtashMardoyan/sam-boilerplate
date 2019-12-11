@@ -3,6 +3,30 @@
     "description": "Serverless Application Model(boilerplate)",
     "version": "0.0.1",
     "private": true,
+    "keywords": [
+        "sam",
+        "aws",
+        "lodash",
+        "postgres",
+        "sequelize",
+        "socket.io",
+        "passport-jwt"
+    ],
+    "contributors": [
+        {
+            "name": "Artash Mardoyan",
+            "email": "artash.mardoyan@makeinarmenia.com"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ArtashMardoyan/sam-boilerplate"
+    },
+    "engines": {
+        "node": ">=10.0.0",
+        "npm": ">=6.5.0",
+        "yarn": ">=1.19.1"
+    },
     "scripts": {
         "test": "jest"
     },
