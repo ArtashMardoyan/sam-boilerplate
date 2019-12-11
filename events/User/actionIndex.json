@@ -1,0 +1,12 @@
+{
+  "resource": "/users",
+  "path": "/users",
+  "httpMethod": "GET",
+  "queryStringParameters": {
+    "page": 1,
+    "limit": 10
+  },
+  "pathParameters": null,
+  "body": null
+}
+

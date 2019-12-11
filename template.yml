@@ -1,0 +1,35 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: 'AWS::Serverless-2016-10-31'
+Description: 'Serverless Application Model(boilerplate)'
+
+Resources:
+  UserHandlerActionView:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handlers/UserHandler.actionView
+      Runtime: nodejs10.x
+      Description: Read data of a user.
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /users/{id}
+            Method: GET
+
+  UserHandlerActionIndex:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handlers/UserHandler.actionIndex
+      Runtime: nodejs10.x
+      Description: List of users.
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /users
+            Method: GET
+
+Outputs:
+  WebEndpoint:
+    Description: "API Gateway endpoint URL for Prod stage"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"

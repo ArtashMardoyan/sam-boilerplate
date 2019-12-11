@@ -1,0 +1,11 @@
+{
+  "resource": " /users/{id}",
+  "path": "/users/test",
+  "httpMethod": "GET",
+  "queryStringParameters": null,
+  "pathParameters": {
+    "id": "cf5ef2e7-b7da-41f9-af53-6ebc14a4e007"
+  },
+  "body": null
+}
+
