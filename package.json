@@ -31,7 +31,7 @@
         "test": "jest"
     },
     "dependencies": {
-        "aws-sdk": "^2.437.0"
+        "aws-sdk": "^2.814.0"
     },
     "devDependencies": {
         "eslint": "^6.7.2",
